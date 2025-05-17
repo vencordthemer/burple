@@ -50,3 +50,7 @@ MAX:
 3. Run `Extensions: Install from VSIX...`
 4. Choose your favorite Burple variant via `Preferences: Color Theme`
 
+
+### Option 2: Install from marketplace
+
+Open it in VSCode [here](vscode:extension/vencordthemer.burple), Then click install
