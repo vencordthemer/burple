@@ -1,20 +1,38 @@
 {
   "name": "burple",
   "displayName": "Burple Theme",
-  "description": "A minimal black and white theme for VS Code",
-  "version": "1.0.0",
+  "description": "A minimal black and purple theme for VS Code",
+  "version": "1.0.2",
   "publisher": "vencordthemer",
   "engines": {
     "vscode": "^1.70.0"
   },
   "categories": ["Themes"],
-  "contributes": {
-    "themes": [
-      {
-        "label": "Burple",
-        "uiTheme": "vs-dark",
-        "path": "./themes/burple.json"
-      }
-    ]
-  }
+ "contributes": {
+  "themes": [
+    {
+      "label": "Burple Dark",
+      "uiTheme": "vs-dark",
+      "path": "./themes/DARK.json"
+    },
+    {
+      "label": "Burple Light",
+      "uiTheme": "vs",
+      "path": "./themes/LIGHT.json"
+    },
+        {
+      "label": "Burple MAX",
+      "uiTheme": "vs-dark",
+      "path": "./themes/MAX.json"
+    }
+  ]
+},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vencordthemer/burple"
+  },
+  "bugs": {
+    "url": "https://github.com/vencordthemer/burple/issues"
+  },
+  "homepage": "https://github.com/vencordthemer/burple#readme"
 }
