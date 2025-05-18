@@ -1,0 +1,50 @@
+name: "🌈 Theme Request"
+description: Suggest a new Burple variant or color theme idea
+title: "[Theme Request]: "
+labels: [enhancement, theme-request]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        💡 Want a new variant of Burple? Suggest it here! We're always looking for fresh ideas to expand the theme family.
+
+  - type: input
+    id: name
+    attributes:
+      label: What's the theme name or vibe?
+      placeholder: e.g., Burple Twilight, Burple Matrix, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the idea
+      description: What should the theme feel like? Any specific colors, vibes, or references?
+      placeholder: |
+        Example:
+        - Dark theme inspired by neon signs
+        - Background: near-black
+        - Accents: hot pink, teal
+        - Syntax: vivid colors for functions & keywords
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: variants
+    attributes:
+      label: Which base variant should it be built on?
+      options:
+        - label: Light-based
+        - label: Dark-based
+        - label: Max-style intense colors
+        - label: Not sure / Surprise me
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How badly do you want it?
+      options:
+        - Just a fun idea
+        - I'd love to see it
+        - NEED this in my life ASAP
