@@ -2,31 +2,51 @@ name: Build & Release VS Code Extension
 
 on:
   push:
-    tags:
-      - 'v*' # Trigger on version tags like v1.0.0
+    branches:
+      - main
+    paths:
+      - 'package.json'
 
 jobs:
-  build-and-release:
+  release:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🧾 Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: 🧰 Set up Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
-      - name: 📦 Install dependencies
-        run: npm ci
+      - name: Install dependencies
+        run: npm install
 
-      - name: 🛠️ Package VS Code Extension (.vsix)
-        run: npx vsce package
+      - name: Install vsce
+        run: npm install -g vsce
 
-      - name: 📤 Upload Release Asset
-        uses: softprops/action-gh-release@v1
+      - name: Get version from package.json
+        id: get_version
+        run: echo "VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_ENV
+
+      - name: Package Extension
+        run: vsce package
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
         with:
-          files: '*.vsix'
+          tag_name: v${{ env.VERSION }}
+          name: Release v${{ env.VERSION }}
+          body: |
+            🧾 Auto-generated release for **Burple** version ${{ env.VERSION }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload VSIX to Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: "*.vsix"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                                         
