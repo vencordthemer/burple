@@ -62,3 +62,4 @@ MAX:
 ### Option 2: Install from marketplace
 
 Open it in VSCode using this link: <vscode:extension/vencordthemer.burple>, Then click install
+
