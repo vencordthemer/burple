@@ -1,5 +1,13 @@
 # 🎨 Burple Theme for VS Code
 
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/vencordthemer.burple)
+![License](https://img.shields.io/github/license/vencordthemer/burple)
+[![VS Code Marketplace](https://img.shields.io/badge/Marketplace-Burple-%237A40FF?logoColor=white)](https://marketplace.visualstudio.com/items?itemName=vencordthemer.burple)
+![Downloads](https://img.shields.io/visual-studio-marketplace/d/vencordthemer.burple)
+[![Install via VSIX](https://img.shields.io/badge/Install-.vsix-purple?logo=visualstudiocode)](https://github.com/vencordthemer/burple/releases/latest)
+
+
+
 Welcome to the **Burple** family — a sleek, modern Visual Studio Code theme collection designed around vibrant purples, clean UI contrast, and developer comfort.
 
 ## 💡 Theme Variants
