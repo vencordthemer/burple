@@ -24,6 +24,21 @@
       "label": "Burple MAX",
       "uiTheme": "vs-dark",
       "path": "./themes/MAX.json"
+    },
+    {
+      "label": "Burple Monochrome",
+      "uiTheme": "vs-dark",
+      "path": "./themes/MONO.json"
+    },
+    {
+      "label": "Burple Pastel",
+      "uiTheme": "vs-dark",
+      "path": "./themes/PASTEL.json"
+    },
+    {
+      "label": "Burple Midnight",
+      "uiTheme": "vs-dark",
+      "path": "./themes/MIDNIGHT.json"
     }
   ]
 },
@@ -36,3 +51,4 @@
   },
   "homepage": "https://github.com/vencordthemer/burple#readme"
 }
+
