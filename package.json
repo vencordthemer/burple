@@ -2,7 +2,7 @@
   "name": "burple",
   "displayName": "Burple Theme",
   "description": "A minimal black and purple theme for VS Code",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "vencordthemer",
   "engines": {
     "vscode": "^1.70.0"
