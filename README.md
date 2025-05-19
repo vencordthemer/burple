@@ -12,11 +12,14 @@ Welcome to the **Burple** family — a sleek, modern Visual Studio Code theme co
 
 ## 💡 Theme Variants
 
-| Theme Name     | Type  | Description |
-|----------------|-------|-------------|
-| **Burple Light** | Light | Bright, clean UI with elegant purple accents for a smooth daytime coding experience. |
-| **Burple Dark**  | Dark  | Deep blacks with balanced purples and glowing highlights for low-light environments. |
-| **Burple Max**   | Dark  | A bold, high-energy purple overload. Perfect for those who want maximum aesthetic. |
+| Theme Name         | Type  | Description                                                                                   |
+|--------------------|-------|-----------------------------------------------------------------------------------------------|
+| **Burple Light**   | Light | Bright, clean UI with elegant purple accents for a smooth daytime coding experience.           |
+| **Burple Dark**    | Dark  | Deep blacks with balanced purples and glowing highlights for low-light environments.           |
+| **Burple Max**     | Dark  | A bold, high-energy purple overload. Perfect for those who want maximum aesthetic.             |
+| **Burple Pastel**  | Dark  | Soft, gentle pastel purples and lavenders for a calming, dreamy coding atmosphere.             |
+| **Burple Midnight**| Dark  | Ultra-dark backgrounds with rich, deep purples and midnight blue-magenta accents.              |
+| **Burple Mono**    | Dark  | Minimalist monochrome with subtle purple highlights for a focused, distraction-free workspace. |
 
 ---
 
@@ -43,9 +46,24 @@ Dark Mode:
 ![](./assets/DARK.jpg)
 
 
+Pastel Mode:
+
+![](./assets/PASTEL.jpg)
+
+Midnight Mode:
+
+![](./assets/MIDNIGHT.jpg)
+
+Monochrome Mode:
+
+![](./assets/MONO.jpg)
+
+
 MAX:
 
 ![](./assets/MAX.jpg)
+
+
 
 ---
 
